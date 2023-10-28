@@ -4,18 +4,24 @@ body {
     font-family: sans-serif;
 }
 
+/*page header, top center image*/
 .main {
     margin: auto;
     width: 80%;
-    background-color:rgb(195, 246, 229);
+    background-color:#D4E9E7;
 }
 
-.container {
+img {
+    width: 100%;
+}
+
+/*text inside the page header*/
+.page-header {
     position: relative;
     text-align: center;
 }
 
-.center {
+.page-header-title {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -24,10 +30,7 @@ body {
     color: white;
 }
 
-img {
-    width: 100%;
-}
-
+/*navigation bar under the page header*/
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -50,13 +53,15 @@ img {
     border-right: 1px solid black;
 }
 
-#contact {
+.navbar li:last-child a {
     border-right: 0px;
 }
 
+/*first image on the left side, under the navbar*/
 .lone-starfish {
     float: left;
     width: 30px;
+    padding-left: 8px;
 }
 
 h2 {
@@ -65,50 +70,60 @@ h2 {
     margin-bottom: 8px;
 }
 
+/*artical that wraps around the starfish image*/
 .artical {
     font-size: 12px ;
     padding-right: 30px;
-    padding-bottom: 1em;
+    padding-bottom: 16px;
     padding-left: 8px;
 }
 
-.lone-starfish {
-    padding-left: 8px;
-}
-
+/*change font size for h3 and h4 the same as required*/
 h3, h4 {
     font-size: 18px;
     padding-left: 8px;
     margin-bottom: 8px;
 }
 
+/*styling the unordered listed items*/
 .facts {
-    padding-left: 1.5em;
-}
-
-.facts li {
+    padding-left: 20px;
     font-size: 12px;
 }
 
+/*styling the contact form*/
 .contactform {
-    margin: 0.5em;
+    margin: 8px;
     border: 1px solid black;
     padding-top: 25px;
     padding-left: 15px;
     padding-bottom: 10px;
 }
 
+/*styling the text inside the contact form*/
+#Yname, #Yemail, #Ymessage {
+    margin-bottom: 10px;
+    width: 96%
+}
+
+.contactform {
+    font-size: 12px ;
+}
+
+.contactform label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-size: 13px;
+}
+
+/*styling the send button inside the contact form*/
 .button {
     background-color: transparent;
     padding: 10px;
     margin-top: 10px;
-    border-width: 1px
-    
-}
-
-#Yname, #Yemail, #Ymessage {
-    margin-bottom: 12px;
-    width: 96%
+    border-width: 1px;
+    font-size: 9px;
 }
 
 .page-footer {
