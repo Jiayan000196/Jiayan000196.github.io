@@ -15,7 +15,7 @@
       <img src="images/lone-starfish-wide.jpg" alt="image of a lone Starfish">
       <div class="page-header-title">Lone Starfish</div> <!--This is the main heading-->
     </header>
-    <div class="navbar"> <!--navigation bar-->
+    <div class="navbar"> <!--navigation bar that evenly distributed under the heading image, the last item has no right border-->
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#story">STORY</a></li>
@@ -50,7 +50,7 @@
     </div>
 
     <h3>Facts About Starfish</h3>
-    <ul class="facts"> <!--These are unordered listed items under heading3-->
+    <ul class="facts"> <!--These are unordered listed items under heading3 with a 20px left padding-->
       <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
       <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
@@ -58,7 +58,7 @@
     </ul>
 
     <h4>Contact to learn more</h4>
-    <div class="contactform"> <!--form with border-->
+    <div class="contactform"> <!--form with a margin and border, and padding on top bottom and left-->
       <form action="/action_page.php">
         <label for="Yname">Your Name</label>
         <input type="text" id="Yname" name="Yname">
@@ -69,20 +69,20 @@
         <label for="Ymessage">Your Message</label>
         <textarea id="Ymessage" name="Ymessage" rows="10"></textarea>
         
-        <!--question inside the form-->
+        <!--question inside the form, radio button on the right side of text-->
         <label>Would you like to visit the starfish?</label>
         <div class="yesorno">
           Yes <input type="radio" name="visit_starfish" value="yes">
           No <input type="radio" name="visit_starfish" value="no">
           Maybe <input type="radio" name="visit_starfish" value="maybe">
         </div>
-        <div>
+        <div> <!--send button that has no background color but has padding, margin and border-->
           <input type="submit" class="button" value="SEND">
         </div>
       </form>
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer"> <!--move the footer to the right side-->
       &copy; Lone Starfish.
     </footer>
   </div>
