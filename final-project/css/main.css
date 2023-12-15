@@ -138,11 +138,13 @@ table {
 
 
 /* common */
+/* set the whole body text to Open sans-serif */
 body {
 	font-family: "Open", sans-serif;
 }
 
 /* header */
+/* navigation */
 .topnav {
 	display: block;
 	background: black;
@@ -165,6 +167,7 @@ body {
 	padding-bottom: 12px;
 }
 
+/* when hover mouse color changes */
 .navs a:hover {
 	color: black;
 	background: #c78c06;
@@ -587,6 +590,9 @@ footer {
 	width: 100%;
 }
 
+
+
+/* min-width media query for the screen size of 760px and above */
 @media screen and (min-width: 760px) {
 
 	/* header */
