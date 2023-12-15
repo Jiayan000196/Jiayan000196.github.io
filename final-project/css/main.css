@@ -1,0 +1,825 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* common */
+body {
+	font-family: "Open", sans-serif;
+}
+
+/* header */
+.topnav {
+	display: block;
+	background: black;
+	padding: 12px 12px;
+}
+
+.starimg {
+	background: #c78c06;
+	position: relative;
+}
+
+.navs a {
+	color: #c78c06;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Open", sans-serif;
+	font-size: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.navs a:hover {
+	color: black;
+	background: #c78c06;
+}
+
+.search {
+	/*width: 100%;*/
+	display: flex;
+	align-items: center;
+}
+
+.searchbar {
+	border-style: none;
+	/*width: 100%;
+	padding: 10px;
+	padding-left: 5px;;*/
+	font-size: 0.9em;
+	height: 2em;
+	width: 100%;
+}
+
+#googlebutton {
+	background: black;
+	border: 1px solid #c78c06;
+}
+
+#googlebutton .material-symbols-outlined {
+	font-size: 1.5em;
+	/*2em*/
+	color: #c78c06;
+	padding-top: 5px;
+}
+
+/* main */
+.welcomepage-text {
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 500px;
+}
+
+.welcomepage h1 {
+	font-family: "Open", sans-serif;
+	font-weight: bold;
+	line-height: 100px;
+	font-size: 85px;
+	color: white;
+	padding-top: 60px;
+	padding-left: 15px;
+}
+
+.welcomepage p {
+	color: white;
+	font-family: "Open", sans-serif;
+	line-height: 35px;
+	font-size: 20px;
+	padding-top: 40px;
+	padding-left: 15px;
+}
+
+.welcomepage-button {
+	display: flex;
+	align-items: center;
+	font-family: "Open", sans-serif;
+	font-size: 20px;
+	margin: 15px;
+	margin-bottom: 25px;
+	background-color: #c78c06;
+	border-style: none;
+	padding: 35px;
+}
+
+.aboutuspage {
+	background-color: #ffe6ac;
+}
+
+.aboutuspage img {
+	width: calc(100% - 20px);
+	padding: 10px 10px 10px 10px;
+}
+
+.aboutuspage h2 {
+	font-size: 50px;
+	font-family: "Open", sans-serif;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.aboutuspage p {
+	font-family: "Open", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	padding-left: 10px;
+	/* padding-top: 10px; */
+	padding-bottom: 15px;
+}
+
+.aboutuspage-text {
+	padding-bottom: 15px;
+}
+
+/* Articles */
+section h2 {
+	font-family: "Open", sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.servicegrid {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.article-1,
+.article-2,
+.article-3,
+.article-4,
+.article-5 {
+	background-color: #ffe6ac;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	/* margin-left: 15px; */
+}
+
+.article-1 img,
+.article-2 img,
+.article-3 img,
+.article-4 img,
+.article-5 img {
+	/* width: calc(100% - 20px);
+	padding-left: 10px;
+	padding-right: 10px; */
+	width: 100%;
+}
+
+.article-1 h3,
+.article-2 h3,
+.article-3 h3,
+.article-4 h3,
+.article-5 h3 {
+	font-family: "Open", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.article-1 p,
+.article-2 p,
+.article-3 p,
+.article-4 p,
+.article-5 p {
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+
+.article-1 button,
+.article-2 button,
+.article-3 button,
+.article-4 button,
+.article-5 button {
+	display: flex;
+	align-items: center;
+	font-family: "Open", sans-serif;
+	font-size: 15px;
+	background: black;
+	color: white;
+	border-style: none;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.servicegrid .material-symbols-outlined {
+	font-size: 3em;
+}
+
+/* Ourvision */
+.ourvision {
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.ourvision img {
+	width: 100%;
+	height: 100%;
+}
+
+.ourvision-text {
+	position: absolute;
+	top: 3px;
+	color: white;
+}
+
+.ourvision-text h3 {
+	font-family: "Open", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.ourvision-text p {
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.ourvision-text button {
+	display: flex;
+	align-items: center;
+	font-family: "Open", sans-serif;
+	font-size: 15px;
+	background: #222;
+	color: white;
+	border: 1px solid #c78c06;
+	margin-left: 15px;
+	/* margin-bottom: 15px; */
+	padding-left: 20px;
+	/* padding-right: 15px; */
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.ourvision-text .material-symbols-outlined {
+	font-size: 45px;
+}
+
+/* Team */
+.team1,
+.team2 {
+	background: #ffe6ac;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.team1text,
+.team2text {
+	background: #ffe6ac;
+	margin-bottom: 20px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.team1 img,
+.team2 img {
+	width: 100%;
+}
+
+.teamgrid h2 {
+	font-family: "Open", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-left: 15px;
+	padding-bottom: 25px;
+}
+
+.teamgrid h3 {
+	font-family: "Open", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.teamgrid h4 {
+	font-family: "Open", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	/* padding-top: 20px; */
+	padding-left: 15px;
+	/* padding-bottom: 15px; */
+}
+
+hr {
+	border: 1.68px solid #c78c06;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.teamgrid p {
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	/* padding-top: 5px; */
+}
+
+/* contactus */
+.contactus h2 {
+	font-family: "Open", sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	padding-left: 15px;
+	padding-bottom: 40px;
+}
+
+.contactus h3 {
+	font-size: 45px;
+	font-weight: bold;
+	margin: 20px 0px 10px 15px;
+}
+
+.contactus form {
+	display: flex;
+	flex-direction: column;
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.contactus label {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.contactus input {
+	height: 20px;
+}
+
+#button {
+	font-family: "Open", sans-serif;
+	font-size: 15px;
+	background-color: black;
+	color: #c78c06;
+	margin-top: 15px;
+	border: none;
+	padding-right: 8px;
+	padding-top: 6px;
+	padding-bottom: 22px;
+	width: 55px;
+}
+
+/* Hoursofoperation */
+
+.hoursofoperation h2,
+.location h2 {
+	font-size: 25px;
+	font-family: "Open", sans-serif;
+	font-weight: bold;
+	margin-left: 1.5%;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.hoursofoperationcontainer table {
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	width: calc(100% - 24px);
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 100%;
+}
+
+table,
+td,
+th {
+	border: 1px solid;
+	padding: 15px;
+}
+
+table tr:nth-child(1) {
+	background-color: #ffe6ac;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+}
+
+.location {
+	margin-top: 20px;
+}
+
+iframe {
+	width: calc(100% - 20px);
+	margin-left: 10px;
+}
+
+/* Footer */
+footer {
+	margin-top: 1em;
+}
+
+.bg-black {
+	font-family: "Open", sans-serif;
+	font-size: 12px;
+	line-height: 30px;
+	background-color: black;
+	color: #c78c06;
+	margin-left: 1.5%;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+
+	/* header */
+	.topnav {
+		display: flex;
+		padding: 20px 85px;
+		align-items: center;
+		margin-bottom: 0.2em;
+	}
+
+	.starimg {
+		flex: 1;
+		background: none;
+		padding: 0 26px 0 0;
+	}
+
+	.starimg img {
+		width: 65px;
+		/*60%*/
+	}
+
+	.navs {
+		flex: 6;
+	}
+
+	.flexnavs {
+		width: 100%;
+		display: flex;
+	}
+
+	.flexnavs li {
+		flex: 1;
+	}
+
+	.flexnavs a {
+		/*margin: 40px;*/
+		font-size: 0.8em;
+		padding-top: 1.2em;
+		padding-bottom: 1.2em;
+		/*padding-left: 8px
+	padding-right: 20px*/
+	}
+
+	.topnav form {
+		flex: 2;
+	}
+
+	/* welcomepage */
+	.welcomepage {
+		width: 100%;
+		height: 380px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.welcomepage img {
+		width: 100%;
+		margin-top: -165px;
+	}
+
+	.welcomepage-text {
+		width: 80%;
+		height: 83.5%;
+		padding-right: 20px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		/* display: inline; */
+		/*margin-left: 90px;
+	margin-right: 90px;*/
+	}
+
+	.welcomepage-text h1 {
+		padding-top: 40px;
+		font-size: 51px;
+		line-height: 1.5em;
+	}
+
+	.welcomepage-text p {
+		font-size: 10px;
+		line-height: 1.5em;
+	}
+
+	.welcomepage-button {
+		font-size: 17px;
+		padding: 20px;
+	}
+
+	.aboutuspage {
+		display: flex;
+		align-items: center;
+		margin-top: -3px;
+		width: 100%;
+	}
+
+	.aboutuspage img {
+		display: inline;
+		width: 35%;
+		float: left;
+		padding-left: 80px;
+	}
+
+	.aboutuspage p {
+		padding-right: 50px;
+		line-height: 18px;
+	}
+
+	/* servicegrid */
+	section h2 {
+		font-size: 35px;
+	}
+
+	.servicegrid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.article-1 {
+		grid-column: 1 / 4;
+	}
+
+	.article-2 {
+		grid-column: 4 / 7;
+	}
+
+	.article-3 {
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+
+	.article-4 {
+		grid-column: 3 / 5;
+		grid-row: 2 / 3;
+	}
+
+	.article-5 {
+		grid-column: 5 / 7;
+		grid-row: 2 / 3;
+	}
+
+	/* Ourvision */
+	.ourvision {
+		width: 100%;
+		height: 190px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.visionimg {
+		margin-top: -87px;
+	}
+
+	.ourvision-text h3 {
+		padding-bottom: 10px;
+		font-size: 23px;
+	}
+
+	.ourvision-text p {
+		font-size: 10px;
+	}
+
+	/* team */
+	.teamgrid {
+		display: grid;
+		gap: 0;
+		grid-template-columns: 500px 500px;
+		grid-template-rows: auto auto;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.team1,
+	.team2 {
+		margin: 0;
+	}
+
+	.team1 img {
+		grid-column: 1;
+		width: 100%;
+	}
+
+	.team1text {
+		grid-column: 2;
+		padding: 10px;
+		background: #ffe6ac;
+		margin: 0;
+	}
+
+	.team2 img {
+		grid-column: 2;
+		grid-row: 2;
+		width: 100%;
+	}
+
+	.team2text {
+		grid-column: 1;
+		grid-row: 2;
+		padding: 10px;
+		background: #ffe6ac;
+		margin: 0;
+	}
+
+	/* contactus  */
+
+	.contactus {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.contactus h3 {
+		font-size: 22px;
+	}
+
+	.sendusamessagecontainer {
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.locationcontainer {
+		grid-row: 1;
+		grid-column: 2;
+	}
+
+	.hoursofoperationcontainer {
+		grid-row: 2;
+		grid-column: 1 / -1;
+
+	}
+}
